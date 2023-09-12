@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Botões de várias cores -->
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary">Ok</button>
+          <button class="btn btn-secondary">ok</button>
+          <button class="btn btn-danger">ok</button>
+          <button class="btn btn-warning">ok</button>
+          <button class="btn btn-info">ok</button>
+          <button class="btn btn-dark">ok</button>
+          <button class="btn btn-light">ok</button>
+          <button class="btn btn-link">ok</button>
+        </div>
+      </div>
+      <!-- Usando botão, input ou a com a class btn -->
+      <div class="row">
+        <div class="col">
+          <input type="button" class="btn btn-primary" value="ok" />
+          <a href="" class="btn btn-primary">Ok</a>
+          <button class="btn btn-primary">Ok</button>
+        </div>
+      </div>
+      <!-- Botão delineado "outline" -->
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-outline-primary">ok</button>
+          <button class="btn btn-outline-warning">ok</button>
+        </div>
+      </div>
+      <!-- Botão mais largo ou menor lg ou sm -->
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-success btn-lg">ok</button>
+          <button class="btn btn-danger btn-sm">ok</button>
+        </div>
+      </div>
+
+      <!-- Botão que preenche todo o espaço "btn-block" não fucionou🤔😕-->
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary btn-block">ok</button>
+        </div>
+      </div>
+      <!-- Quando a pessoa pressiona segurando o botão "active" fica com a cor do botão ativado -->
+      <div class="row">
+        <div class="col">
+          <a
+            href=""
+            class="btn btn-primary active btn-block"
+            aria-pressed="true"
+            >Link</a
+          >
+        </div>
+      </div>
+      <!-- Botão desabilitado (já fica com a cor do botão desabilitado) -->
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-danger btn-block" disabled>ok</button>
+        </div>
+      </div>
+      <!-- O mesmo botão que muda de opção "data-toggle='button'" -->
+      <div class="row">
+        <div class="col">
+          <button
+            class="btn btn-success"
+            id="btn-auto-save"
+            data-toggle="button"
+          >
+            Auto Save
+          </button>
+        </div>
+      </div>
+
+      <!-- Grupo de botões toggle (não era para msotrar a bolinha😥)-->
+      <div class="row">
+        <div class="col">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label for="option1" class="btn btn-secondary" active
+              >1 <input type="radio" name="options" id="option1" checked
+            /></label>
+            <label for="option2" class="btn btn-secondary"
+              >2
+              <input type="radio" name="options" id="option2" />
+            </label>
+            <label for="option3" class="btn btn-secondary"
+              >3
+              <input type="radio" name="options" id="option3" />
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ao pressionar um botão habilitar ou desabilitar outro botão, no caso, o botão Auto Save-->
+      <button class="btn btn-primary" id="btn-click">
+        Ativa/Desativa Auto Save
+      </button>
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(() => {
+        $("#btn-click").on("click", (e) => {
+          $("#btn-auto-save").button("toggle");
+        });
+      });
+    </script>
+  </body>
+</html>

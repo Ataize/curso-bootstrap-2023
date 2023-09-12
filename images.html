@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+            alt="Foto"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+            alt="Foto"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <img
+      src="https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+      alt="Foto"
+      class="img-fluid"
+    />
+    <hr />
+    <!-- thumbnail faz o mesmo que o fluid mas adiciona uma margem -->
+    <img
+      src="https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+      alt="Foto"
+      class="img-thumbnail"
+    />
+    <hr />
+    <!-- rounded deixa a borda da imagem arredondada -->
+    <img
+      src="https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+      alt="Foto"
+      class="img-fluid rounded"
+    />
+    <hr />
+    <img
+      src="https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+      alt="Foto"
+      class="rounded d-block mx-auto"
+      style="width: 256px"
+    />
+    <hr />
+    <!-- Picture serve para várias imagens -->
+    <picture>
+      <source
+        srcset="
+          https://media.istockphoto.com/id/184911601/pt/foto/cedo-de-manh%C3%A3-de-f%C3%A1brica-butte.jpg?s=170667a&w=0&k=20&c=yI91-RNUVF0GJhcanuZ3mtkgQTQfRkSuYngtxAeVvkQ=
+        "
+      />
+      <img
+        src="https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+        alt="Foto"
+        class="img-fluid img-thumbnail"
+      />
+    </picture>
+    <hr />
+    <!-- Figure serve para imagens com texto -->
+    <figure class="figure">
+      <img
+        src="https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+        alt="Foto"
+        class="figure-img img-fluid"
+      />
+      <figcaption class="figure-caption">Legenda da imagem</figcaption>
+    </figure>
+    <hr />
+    <figure class="figure">
+      <img
+        src="https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+        alt="Foto"
+        class="figure-img img-fluid"
+      />
+      <figcaption class="figure-caption text-center">
+        Legenda da imagem
+      </figcaption>
+    </figure>
+  </body>
+</html>

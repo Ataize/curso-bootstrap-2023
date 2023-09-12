@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sem formatação do bootstrap no form -->
+      <h2 class="h2">Form sem formatação do bootstrap</h2>
+      <form action="">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" />
+
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" />
+
+        <button type="submit">Enviar</button>
+      </form>
+      <hr />
+      <!-- Com formatação de bootestrap no form -->
+      <h2 class="h2">Form com formatação do bootstrap</h2>
+      <form action="">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input class="form-control" type="email" name="email" id="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input
+            class="form-control"
+            type="password"
+            name="password"
+            id="password"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="state">Estado</label>
+          <select name="state" id="state" class="form-control">
+            <option value="estado">Selecione o Estado</option>
+            <option value="ac">Acre</option>
+            <option value="al">Alagoas</option>
+            <option value="am">Amazonas</option>
+            <option value="ap">Amapá</option>
+            <option value="ba">Bahia</option>
+            <option value="ce">Ceará</option>
+            <option value="df">Distrito Federal</option>
+            <option value="es">Espírito Santo</option>
+            <option value="go">Goiás</option>
+            <option value="ma">Maranhão</option>
+            <option value="mt">Mato Grosso</option>
+            <option value="ms">Mato Grosso do Sul</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="pa">Pará</option>
+            <option value="pb">Paraíba</option>
+            <option value="pr">Paraná</option>
+            <option value="pe">Pernambuco</option>
+            <option value="pi">Piauí</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="rn">Rio Grande do Norte</option>
+            <option value="ro">Rondônia</option>
+            <option value="rs">Rio Grande do Sul</option>
+            <option value="rr">Roraima</option>
+            <option value="sc">Santa Catarina</option>
+            <option value="se">Sergipe</option>
+            <option value="sp">São Paulo</option>
+            <option value="to">Tocantins</option>
+          </select>
+        </div>
+
+        <div class="forme-group">
+          <label for="message">Mensagem</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="form-control"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="file">Foto</label>
+          <input type="file" name="file" id="file" class="form-control-file" />
+        </div>
+
+        <button type="submit" class="btn bg-primary">Enviar</button>
+      </form>
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(() => {});
+    </script>
+  </body>
+</html>
